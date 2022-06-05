@@ -1,0 +1,31 @@
+import pyautogui
+import time
+
+meetingID = pyautogui.prompt(text='https://meet.google.com/hmn-vjrk-ugt', title='Meeting ID', default='')
+time.sleep(1)
+pyautogui.press('win', interval=0.1)
+time.sleep(1)
+pyautogui.typewrite('chrome', interval=0.1)
+time.sleep(1)
+pyautogui.press('enter', interval=0.1)
+time.sleep(1)
+pyautogui.typewrite('https://meet.google.com/?authser=0', interval=0.1)
+time.sleep(1)
+pyautogui.press('enter', interval=0.1)
+time.sleep(1)
+pyautogui.click(400, 675)
+time.sleep(1)
+pyautogui.typewrite(meetingID, interval=0.1)
+time.sleep(1)
+pyautogui.press('enter', interval=0.1)
+time.sleep(1)
+pyautogui.click(680, 730)
+time.sleep(1)
+pyautogui.click(760, 730)
+time.sleep(1)
+
+pyautogui.alert(text='We are entering a meeting',  title='Info', button='OK')
+time.sleep(1)
+pyautogui.click(1275, 580)
+print("Asked to join")
+
