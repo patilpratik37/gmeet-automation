@@ -1,1 +1,1 @@
-# -GOOGLE-Meet-Automation
+# GOOGLE-Meet-Automation
